@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		17A8F22F211BC1FA00D01AA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A8F22E211BC1FA00D01AA9 /* AppDelegate.swift */; };
-		17A8F231211BC1FA00D01AA9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A8F230211BC1FA00D01AA9 /* ViewController.swift */; };
+		17A8F231211BC1FA00D01AA9 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A8F230211BC1FA00D01AA9 /* HomeVC.swift */; };
 		17A8F234211BC1FA00D01AA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17A8F232211BC1FA00D01AA9 /* Main.storyboard */; };
 		17A8F236211BC1FB00D01AA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17A8F235211BC1FB00D01AA9 /* Assets.xcassets */; };
 		17A8F239211BC1FB00D01AA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17A8F237211BC1FB00D01AA9 /* LaunchScreen.storyboard */; };
+		17A8F241211BCAAE00D01AA9 /* Week.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A8F240211BCAAE00D01AA9 /* Week.swift */; };
+		17A8F243211BD43500D01AA9 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A8F242211BD43500D01AA9 /* Meal.swift */; };
+		17A8F245211BDDD500D01AA9 /* MealCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A8F244211BDDD500D01AA9 /* MealCell.swift */; };
+		17A8F247211CA54200D01AA9 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A8F246211CA54200D01AA9 /* DataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		17A8F22B211BC1FA00D01AA9 /* ASU Meal Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ASU Meal Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		17A8F22E211BC1FA00D01AA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		17A8F230211BC1FA00D01AA9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		17A8F230211BC1FA00D01AA9 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		17A8F233211BC1FA00D01AA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		17A8F235211BC1FB00D01AA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17A8F238211BC1FB00D01AA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		17A8F23A211BC1FB00D01AA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17A8F240211BCAAE00D01AA9 /* Week.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Week.swift; sourceTree = "<group>"; };
+		17A8F242211BD43500D01AA9 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		17A8F244211BDDD500D01AA9 /* MealCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealCell.swift; sourceTree = "<group>"; };
+		17A8F246211CA54200D01AA9 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +46,7 @@
 		17A8F222211BC1FA00D01AA9 = {
 			isa = PBXGroup;
 			children = (
-				17A8F22D211BC1FA00D01AA9 /* ASU Meal Tracker */,
+				17A8F22D211BC1FA00D01AA9 /* ASUMealTracker */,
 				17A8F22C211BC1FA00D01AA9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,17 +59,21 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		17A8F22D211BC1FA00D01AA9 /* ASU Meal Tracker */ = {
+		17A8F22D211BC1FA00D01AA9 /* ASUMealTracker */ = {
 			isa = PBXGroup;
 			children = (
 				17A8F22E211BC1FA00D01AA9 /* AppDelegate.swift */,
-				17A8F230211BC1FA00D01AA9 /* ViewController.swift */,
+				17A8F230211BC1FA00D01AA9 /* HomeVC.swift */,
+				17A8F246211CA54200D01AA9 /* DataManager.swift */,
+				17A8F240211BCAAE00D01AA9 /* Week.swift */,
+				17A8F242211BD43500D01AA9 /* Meal.swift */,
 				17A8F232211BC1FA00D01AA9 /* Main.storyboard */,
+				17A8F244211BDDD500D01AA9 /* MealCell.swift */,
 				17A8F235211BC1FB00D01AA9 /* Assets.xcassets */,
 				17A8F237211BC1FB00D01AA9 /* LaunchScreen.storyboard */,
 				17A8F23A211BC1FB00D01AA9 /* Info.plist */,
 			);
-			path = "ASU Meal Tracker";
+			path = ASUMealTracker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,7 +111,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 17A8F226211BC1FA00D01AA9 /* Build configuration list for PBXProject "ASU Meal Tracker" */;
+			buildConfigurationList = 17A8F226211BC1FA00D01AA9 /* Build configuration list for PBXProject "ASUMealTracker" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -135,8 +147,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17A8F231211BC1FA00D01AA9 /* ViewController.swift in Sources */,
+				17A8F245211BDDD500D01AA9 /* MealCell.swift in Sources */,
+				17A8F247211CA54200D01AA9 /* DataManager.swift in Sources */,
+				17A8F243211BD43500D01AA9 /* Meal.swift in Sources */,
+				17A8F231211BC1FA00D01AA9 /* HomeVC.swift in Sources */,
 				17A8F22F211BC1FA00D01AA9 /* AppDelegate.swift in Sources */,
+				17A8F241211BCAAE00D01AA9 /* Week.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,7 +229,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -267,7 +283,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -315,7 +331,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		17A8F226211BC1FA00D01AA9 /* Build configuration list for PBXProject "ASU Meal Tracker" */ = {
+		17A8F226211BC1FA00D01AA9 /* Build configuration list for PBXProject "ASUMealTracker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				17A8F23B211BC1FB00D01AA9 /* Debug */,
