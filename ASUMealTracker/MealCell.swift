@@ -15,6 +15,7 @@ protocol MealCellListener: class {
 //custom action for meal cell
 class MealCell: UITableViewCell {
     
+    @IBOutlet weak var toggle: UISwitch!
     @IBOutlet weak var mealEatenDate: UILabel!
     //when state is switch, change state of meal
     @IBAction func mealStateSwitch(_ sender: UISwitch) {

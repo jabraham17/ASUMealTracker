@@ -122,6 +122,9 @@ class HomeVC: UITableViewController, MealCellListener {
         //get the cell
         let cell = tableView.dequeueReusableCell(withIdentifier: "mealCell") as! MealCell
         
+        //set the state of the switch
+        cell.toggle.isOn = (getCurrentWeek().getMeal(index: indexPath.row)?.eaten)!
+        
         //add the date eaten
         cell.index = indexPath.row
         updateMealDate(cell: cell)
