@@ -4,8 +4,8 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -25,21 +25,27 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="MgK-uD-zQD">
+                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="MgK-uD-zQD">
                                             <rect key="frame" x="312" y="6" width="49" height="31"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <connections>
                                                 <action selector="mealStateSwitch:" destination="QhB-HJ-q1D" eventType="valueChanged" id="hri-rR-7cW"/>
                                             </connections>
                                         </switch>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Day, Date, Year, 00:00 APM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9gt-Py-D3c">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Day, Date, Year, 00:00 APM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9gt-Py-D3c">
                                             <rect key="frame" x="12" y="6" width="292" height="31"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="9gt-Py-D3c" firstAttribute="leading" secondItem="D3R-Df-P9X" secondAttribute="leadingMargin" constant="-4" id="0nk-fb-9ei"/>
+                                        <constraint firstItem="9gt-Py-D3c" firstAttribute="centerY" secondItem="D3R-Df-P9X" secondAttribute="centerY" id="PrZ-vn-G3G"/>
+                                        <constraint firstItem="9gt-Py-D3c" firstAttribute="top" secondItem="MgK-uD-zQD" secondAttribute="top" id="UfV-3h-Dmb"/>
+                                        <constraint firstItem="MgK-uD-zQD" firstAttribute="leading" secondItem="9gt-Py-D3c" secondAttribute="trailing" constant="8" symbolic="YES" id="aOt-xo-9LM"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="MgK-uD-zQD" secondAttribute="trailing" constant="-2" id="c7W-cM-epq"/>
+                                        <constraint firstItem="9gt-Py-D3c" firstAttribute="bottom" secondItem="MgK-uD-zQD" secondAttribute="bottom" id="nJC-hU-U06"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="mealEatenDate" destination="9gt-Py-D3c" id="eAV-3f-Sth"/>
