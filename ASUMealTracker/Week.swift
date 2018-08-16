@@ -50,6 +50,8 @@ class Week: Codable {
             //find the next tuesdaty, which is end day
             var dateComp = DateComponents()
             dateComp.weekday = 3
+            dateComp.hour = 23
+            dateComp.minute = 59
             endDate = calendar.nextDate(after: today, matching: dateComp, matchingPolicy: .nextTime, direction: .forward)!
         }
         

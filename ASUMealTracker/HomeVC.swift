@@ -78,6 +78,9 @@ class HomeVC: UITableViewController, MealCellListener {
         
         checkWeek()
         
+        print(timeFormatter.string(from: getCurrentWeek().startDate))
+        print(timeFormatter.string(from: getCurrentWeek().endDate))
+        
         //set the title
         self.navigationItem.title = "\(shortDateFormatter.string(from: getCurrentWeek().startDate)) - \(shortDateFormatter.string(from: getCurrentWeek().endDate))"
         
